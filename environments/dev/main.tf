@@ -54,7 +54,7 @@ resource "google_bigquery_dataset" "default" {
   description                 = "This is the BQ dataset for running the datalake demo"
   location                    = "US"
   default_table_expiration_ms = 3600000
-}
+} 
 
 resource "google_dataflow_job" "dataflow_job" {
   project               = "${var.project_id}"
